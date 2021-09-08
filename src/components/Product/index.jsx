@@ -7,7 +7,7 @@ const Product = ({ id, name, category, price, handleClick }) => {
 			<li id="menuItem">
 				<h3 className="menuName">{name}</h3>
 				<p className="menuCategory">{category}</p>
-				<p className="menuPrice">R$: {price}</p>
+				<p className="menuPrice">R$ {price}</p>
 
 				<button
 					type="button"

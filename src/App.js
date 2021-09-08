@@ -21,12 +21,18 @@ function App() {
 
   const showProducts = (input) => {
 
-    const inputFilter = products.filter((item) => item.name.toLocaleLowerCase() === input.toLocaleLowerCase())
+    const inputFilter = products.filter((item) => item.name.toLocaleLowerCase() === input.toLocaleLowerCase() || item.category.toLocaleLowerCase() === input.toLocaleLowerCase())
 
     typeof inputFilter[0] === "undefined" ? (
       setFilteredProducts(products)
     ) : (
       setFilteredProducts(inputFilter)
+    )
+
+    typeof inputFilter[0] === "undefined" ? (
+      setFilteredProducts(products)
+    ) : (
+      setInput("")
     )
   }
 

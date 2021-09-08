@@ -7,7 +7,7 @@ const BuyCart = ({ currentSale }) => {
 	return (
 		<>
 			<h3 id="totalTitle">
-				Total R$: {totalPrice.reduce((acc, item) => { return acc + item }, 0).toFixed(2)}
+				Total R$ {totalPrice.reduce((acc, item) => { return acc + item }, 0).toFixed(2)}
 			</h3>
 			<ul id="cartList">
 
