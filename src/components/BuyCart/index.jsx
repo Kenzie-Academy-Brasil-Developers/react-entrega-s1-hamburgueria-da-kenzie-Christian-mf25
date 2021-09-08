@@ -17,7 +17,7 @@ const BuyCart = ({ currentSale }) => {
 						key={index}>
 						<h3 className="menuName">{item.name}</h3>
 						<p className="menuCategory">{item.category}</p>
-						<p className="menuPrice">R$: {item.price}</p>
+						<p className="menuPrice">R$ {item.price}</p>
 					</li>
 				))}
 			</ul>
