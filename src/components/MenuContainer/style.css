@@ -1,0 +1,17 @@
+.menuList{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	
+	list-style: none;
+	width: 90vw;
+}
+
+@media (min-width: 640px){
+	.menuList{
+		max-width: 90vw;
+		justify-content: center;
+	}
+}

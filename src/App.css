@@ -1,0 +1,86 @@
+h1, h3, p, form, input, input:focus, button, ul, li{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+
+.App{
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #ffbe14;
+}
+
+  #page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100vh;
+  }
+    .titleName{
+      margin: 10px 0 5px 0;
+
+      font-size: 2rem;
+    }
+
+    #search{
+      display: flex;
+      height: 30px;
+      width: 80vw;
+      max-width: 421px;
+    }
+      .searchInput{
+        width: 70%;
+        max-width: 295px;
+        height: 100%;
+
+        font-size: 1.2rem;
+
+        border-radius: 10px 0 0 10px;
+      }
+        .searchInput:focus{
+          padding-left: 5px;
+          border-radius: 10px 0 0 10px;
+          filter: brightness(0.9);
+        }
+        .searchInput::placeholder{
+          font-size: 1rem;
+          padding-left: 5px;
+        }
+      .searchButton{
+        width: 30%;
+        max-width: 126px;
+        height: 100%;
+
+        border-radius: 0 10px 10px 0;
+
+        background-color: #be1d1d;
+        
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: 600;
+      }
+        .searchButton:hover{
+          filter: brightness(0.9);
+        }
+
+  .cart{
+    width: 90vw;
+    height: 25vh;
+
+    margin: 0 auto;
+  }
+
+@media (min-width: 854px){
+  body{
+    background-color: #ffbe14;
+  }
+  
+  #page{
+    height: 450px;
+  }
+
+}
